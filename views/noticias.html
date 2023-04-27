@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Declaración de los caracteres, la descripción, los "robots", el autor, el lenguaje, las "arañas" y la categoria-->
+	<meta charset="UTF-8">
+    <meta name="description" content="Proyecto final HTML-CSS">
+    <meta name="robots" content="NOFOLLOW">
+    <meta name="Author" content="Jose Antonio Gomez Torres">
+    <meta name="keywords" content="proyecto_final,html,css,practica_final">
+    <meta name="lang" content="es">
+    <meta name="revisit-after" content="7 days">
+    <meta name="category" content="proyecto_final">
+
+	
+
+	<!-- Declaración de fichero de estilos -->
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+	<!-- Declaración del favicon -->
+	<link rel="icon" type="imagen/jpeg" href="../img/LOL.jpeg">
+	<!-- Titulo de la página-->
+	<title> LEAGUE OF LEGEND - UDYR </title>
+</head>
+
+<body>
+	<!-- Contenido de la cabecera(imagen) y del menú de navegación -->
+	<header>
+		<div>
+			<img src="../img/LOLBanner.jpg" id="img_header" alt="imagen de cabecera" title="imagen de cabecera">		
+		</div>
+
+		<!--Menú de navegación con sus diferentes botones -->
+		<nav>
+			<div class="div_menu">
+				<span class="boton_azul">
+					<a href="../index.html" class="div_menu">Inicio</a>
+				</span>
+
+				<span class="boton_azul_principal">
+					<a href="./noticias.html" class="div_menu">Noticias</a>
+				</span>
+					
+				<span class="boton_azul">
+					<a href="./portfolio.html" class="div_menu">Galería</a>
+				</span>
+
+				<span class="boton_azul">
+					<a href="./contacto.html" class="div_menu">Contacto</a>
+				</span>
+				
+				<span class="boton_azul">
+					<a href="./presupuesto.html" class="div_menu">Registro</a>
+				</span>
+			</div>
+		</nav>	
+	</header>
+	
+	<div>
+	<!--Div que contiene todo el contenido de la pagina principal-->
+		<div id="div_principal">
+			<!--Contenido del articulo 1 -->
+			<!--Ésta primera noticia esta compuesta por 3 "div": el primero que contiene la imagen, uno segundo que contiene el título, 
+				y uno tercero que contiene todo el contenido (dentro de éste hay una tabla que contiene 2 listas no ordenadas)-->
+			<article>
+				<br>
+				<div id="div_noticias_1">
+					<img src="../img/LEC.jpg" id="img_noticia_1" alt="Noticia de LEC">
+				</div>
+				
+				<div>
+					
+					<div>
+						<h1>LEC 2023 Competitive FAQ </h1>
+						<p class="preguntaNegrita"> We’re here to update you with some more in-depth and important information about the LEC in 2023, ahead of our Winter Split start</p>
+					</div>
+				</div>
+				
+				<div>
+					<p>Happy New Year, LEC fans! We’re back for a whole new season of LoL Esports in EMEA and ahead of the action we want to share additional details 
+						and information about our all-new LEC format. </p>
+					<p>It’s all changing for us over at the League of Legends EMEA Championship. Before we begin, we wanted to share some more details about what the LEC 
+						will look like in 2023. We’re here to answer some of the questions many of you have been asking since the news that we’ll be changing our format from 2023.</p>
+
+					<p class="preguntaNegrita"> What are the split dates for LEC 2023?</p>
+					<p>As we announced at the end of 2022, the LEC’s game days will be changing for 2023. There will be three days of games every week on Saturdays, Sundays, and 
+						Mondays - with Split Finals always taking place on Sundays.</p>
+					<p>Each split will last six weeks, with the LEC Season Finals taking place in August and September. Our three splits will be played with a live audience from 
+						our LEC Studio in Berlin, and the 2023 season will culminate with our Season Finals Roadshow. Further information about the specific start dates for the 
+						Spring and Summer Splits and our Season Finals will be released later in the year.</p>
+
+					<p class="preguntaNegrita"> How will side selection be decided in this new LEC format?</p>
+					<p>Side selection is a crucial part of the competitive integrity of our league, so we wanted to ensure we weren’t giving any unfair advantages to teams following 
+						the changes to our season. For all regular season games in 2023, side selection will be randomly assigned by the League prior to the start of each split – and 
+						each team will have a minimum of four games on each side.</p>
+
+					<p class="preguntaNegrita"> How will tiebreakers be decided in the new format?</p>
+					<p>If the teams have an identical amount of games won against each other, then the tiebreaker will rely on a statistic called Strength of Victory (SoV) score. A 
+						full explanation of how we calculate SoV can be found in the <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://s3.eu-west-1.amazonaws.com/eu-tournament-assets/files/LEC-Rulebook-13.12.2022-V2.0.pdf" title="Reglas LEC"> 
+						LEC’s official rulebook </a>. Teams with a higher SoV score will be granted the higher seeds. Information about further tiebreaker protocols if all these 
+						options have been exhausted can also be found in the rulebook. </p>
+
+					<p class="preguntaNegrita"> What is the Championship point breakdown across all three splits? </p>
+					
+					<p>Now that we’re running three regular splits in a year rather than two, we’re going to be making some changes to how Championship points are distributed. Winter
+						and Spring placements will award the same amount of Championship points, while Summer will offer slightly more – the complete point breakdown is as follows.</p>
+					<table>
+						<tr>
+							<td class="celdas_noticias">
+								Winter/Spring Split
+							</td>
+								
+							<td class="celdas_noticias">
+								Summer Split
+							</td>
+						</tr>
+						
+						<tr>
+							<td class="celdas_noticias">
+								<ul>
+									<li>1st - 120</li>
+									<li>2nd - 100</li>
+									<li>3rd - 80</li>
+									<li>4th - 60</li>
+									<li>5th - 50</li>
+									<li>6th - 40</li>
+									<li>7th - 30</li>
+									<li>8th - 20</li>
+									<li>9th - 10</li>
+									<li>10th - 5</li>
+								</ul> 
+							</td>
+
+							<td class="celdas_noticias">
+								<ul>
+									<li>1st - 180</li>
+									<li>2nd - 150</li>
+									<li>3rd - 120</li>
+									<li>4th - 90</li>
+									<li>5th - 75</li>
+									<li>6th - 60</li>
+									<li>7th - 45</li>
+									<li>8th - 30</li>
+									<li>9th - 15</li>
+									<li>10th - 7</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+
+					<p> Championship points will be what qualifies teams to those all-important Season Finals. The Champion from each split will automatically qualify for Finals, 
+						but the remaining 3-5 seeds will be entirely decided on Championship points.</p>
+
+					<p id="preguntaNegrita"> How will patch updates translate to LEC games?</p>
+
+					<p> Competitive patches will update one calendar week after the patch is released onto the live server.</p>
+					<p> With the LEC now being split into two, three-week phases (the regular season and the group stage/playoffs), we won’t be changing patches mid-phase regardless 
+						of patch release date. This means all three weeks of the regular season will take place on the same patch. Patch changes will happen between the regular 
+						season and the group stage, and the patch will remain the same from the group stage all the way through to the end of the playoffs. </p>
+					<p> New champions will be automatically restricted from competitive play for their release patch – and champion reworks will be enabled at the sole discretion 
+						of the League. </p>
+
+					<p class="preguntaNegrita"> LEC age limit</p>
+					<p id="preguntaCursiva"> This article initially referenced that the age limit to compete in the LEC would increase from 17-years-old to 18-years-old in 2023. That information was 
+						incorrect and the minimum age to compete will remain 17-years-old for 2023. We evaluated increasing the age to compete during the off-season, but after 
+						assessing it more closely, we concluded we wanted this rule to remain the same this year. Apologies for any inconvenience caused. </p>
+
+					<p class="preguntaNegrita"> Worlds Qualification </p>
+					<p>Following the news earlier this month that the LEC will receive three slots at Worlds and one slot at the World Qualifying Series (WQS), we can confirm that
+						in 2023, the winner and runner-up at the 2023 LEC Season Finals will represent EMEA as our first and second seeds respectively. </p>
+					<p>As we’ve previously revealed, should a team win all three splits (Winter, Spring and Summer), they would automatically qualify for Worlds. In this scenario, 
+						the team would guarantee its place as the third LEC seed in Korea, with the opportunity to improve its seeding at our Season Finals. If the team were to 
+						secure first or second place at our crown jewel event, then the third place team in the competition would qualify for Worlds as the third seed, while the 
+						fourth placed team in the competition would enter WQS.</p>
+					<p>In the event that a team wins all three splits but finishes fourth or lower at the Season Finals, the WQS slot would go to the team that finishes third at 
+						the event.</p>
+
+					<p class="preguntaNegrita"> </p>
+					<p>With two teams from the LEC qualifying for the Mid-Season Invitational (MSI), we can confirm that the winner of the 2023 Spring Split will head to London as 
+						our first seeds, while the winner of the 2023 Winter Split will represent our region on stage as the second seeds.</p>
+					<p>If a team wins both the Winter and Spring splits, the team with the highest number of Championship Points from the first two splits of the season will attend 
+						as the second seeds.</p>
+					<p>In the event that two or more teams have the same number of Championship Points, then the team with the highest place finish at the 2023 Spring Split will 
+						represent EMEA at MSI.</p>
+
+					<p class="preguntaNegrita"> That’s all the updates we have for you for now. We hope you’ll join us on January 21 for the opening weekend of our inaugural Winter 
+						Split. We can’t wait to welcome back fans, players, and teams for 2023, whether you’re tuning in from home or cheering your hearts out at the LEC arena.</p>
+
+				</div>
+			</article>
+			
+			<br>
+			<br>
+			<br>
+
+			<!--Contenido del articulo 2 -->
+			<!--Ésta segunda noticia está compuesta por un "div" que tiene: un "span" que contiene la imagen, 
+				y un "div" que contiene la noticia (éste último tiene 2 listas no ordenadas y un enlace directo a la página donde se pueden ver los partidos
+				de los que tratan las noticias)-->
+			<article>
+				<div>
+					<span>
+						<img id="imagen_noticias_2" src="../img/noticia2.jpg" alt="Noticias de la LEC">
+					</span>
+
+					<h1>Explicación del formato: Nuevos comienzos 2023 </h1>
+					<p class="preguntaNegrita"> Os explicamos el funcionamiento de Nuevos comienzos, un evento que durará dos días.</p>
+					
+					<div>
+						<p>¡El Nuevos comienzos 2023 está a la vuelta de la esquina! Conectaos el 10 y 11 de enero para ver a jugadores de la LCS, la LEC, la LCK, la LPL, la LJL, 
+							la CBLOL, la LLA, la PCS y la VCS durante la retransmisión especial de este evento que durará dos días. El evento en sí mismo solo se celebrará durante 
+							unas horas en cada región, ¡pero ahí no acaba la cosa! Cuando concluya el evento de una liga, la siguiente tomará las riendas de la retransmisión y se 
+							pondrá manos a la obra.</p>
+
+						<p class="preguntaNegrita"> Formato</p>
+						<ul>
+							<li> Todos los equipos profesionales de las nueve ligas enviarán a jugadores para que compitan en Nuevos comienzos. Cada región decidirá por su cuenta 
+								 cómo se clasificarán sus equipos, por lo que puede que la LCS y la PCS empleen métodos diferentes.</li>
+							<li> Formato al mejor de tres en la Grieta del Invocador (nota: la LPL utilizará un formato de eliminación única al mejor de una).</li>
+							<li> No habrá bloqueos de campeones: se puede jugar con cualquiera.</li>
+							<li> No será posible repetir campeones: si ya se ha utilizado a un campeón, dejará de estar disponible (nota: la LPL lo organizará de una forma un tanto 
+								 distinta, ya que se jugarán más partidas).</li>
+							<li> Cada uno de los equipos profesionales representados en el equipo ganador tendrá la oportunidad de crear con nuestros diseñadores un emoticono que 
+								 añadiremos a League of Legends.</li>
+						</ul>
+
+						<p class="preguntaNegrita"> Calendario </p>
+						<p>Martes, 10 de enero, de 2023</p>
+						<ul>
+							<li>10:30 - 14:00 (hora peninsular): LCK</li>
+							<li>14:00 - 17:00 (hora peninsular): VCS</li>
+							<li>17:00 - 20:00 (hora peninsular): CBLOL</li>
+							<li>20:00 - 23:00 (hora peninsular): LCS</li>
+							<li>23:00 - 06:00 (hora peninsular): Reemisión de retransmisiones</li>
+							<li>08:00 - 11:00 (hora peninsular): LJL</li>
+						</ul>
+							
+						<p>Miércoles, 11 de enero, de 2023 </p>
+						<ul>
+							<li>11:00 - 14:00 (hora peninsular): LPL</li>
+							<li>14:00 - 17:00 (hora peninsular): PCS</li>
+							<li>17:00 - 20:00 (hora peninsular): LEC</li>
+							<li>20:00 - 23:00 (hora peninsular): LLA</li>
+							<li>23:00 - 05:00 (hora peninsular): Reemisión de retransmisiones</li>
+						</ul>
+						
+						<p>Conectaos a <a href="https://lolesports.com/vods/lec/lec_winter_2023">lolesports.com</a> 
+						para no perderos nada y seguid a @LoLEsports en las redes sociales para estar al día de las novedades.</p>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+	
+	<footer>
+		<!--Div que contiene el pié de página.-->
+		<div  id="div_footer">
+			<!--Links de las redes sociales, ubicación de la empresa y el aviso legal-->
+			<div id="redes">
+
+				<a href="https://www.instagram.com/" title="página oficial de instagram">
+					<img class="parrafoImagenes2" src="../img/instagram.jpg" alt="Red social Instagram">
+				</a>
+				
+				<a href="https://www.facebook.com/" title="página oficial de facebook">
+					<img class="parrafoImagenes2" src="../img/facebook.jpg" alt="Red social Facebook">
+				</a>
+
+				<a href="https://www.youtube.com/" title="página oficial de youtube">
+					<img class="parrafoImagenes2" src="../img/youtube.jpg" alt="Red social Youtube">
+				</a>
+
+				<a href="https://www.twitter.com/" title="página oficial de twitter">
+					<img class="parrafoImagenes2" src="../img/twitter.jpg" alt="Red social Twitter">
+				</a>
+				<br>
+				<br>
+				<p id="pFooter"> 
+					<a href="./contacto.html">Riot Games Inc. 12333 W Olympic Blvd, Los Angeles, CA 90064, Estados Unidos</a> 
+				</p>
+				<p class="preguntaNegrita" style="text-align: center;">™ & © 2023 <a href="https://www.leagueoflegends.com/es-es/">Riot Games</a>, Inc. Todos los derechos reservados. 
+					Riot Games, League of Legends y PvP.net son marcas comerciales o marcas registradas de Riot Games, Inc. </p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

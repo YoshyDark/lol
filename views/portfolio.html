@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--Declaración de los caracteres, la descripción, los "robots", el autor, el lenguaje, las "arañas" y la categoria-->
+	<meta charset="UTF-8" >
+    <meta name="description" content="Proyecto final HTML-CSS" >
+    <meta name="robots" content="NOFOLLOW" >
+    <meta name="Author" content="Jose Antonio Gomez Torres" >
+    <meta name="keywords" content="proyecto_final,html,css,practica_final" >
+    <meta name="lang" content="es" >
+    <meta name="revisit-after" content="7 days" >
+    <meta name="category" content="proyecto_final" >
+	<!-- Declaración de fichero de estilos -->
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+	<!-- Declaración del favicon -->
+	<link rel="icon" type="imagen/jpeg" href="../img/LOL.jpeg">
+	<!-- Titulo de la página-->
+	<title> LEAGUE OF LEGEND - UDYR </title>
+</head>
+
+<body>
+	<!-- Contenido de la cabecera(imagen) y del menú de navegación -->
+	<header>
+		<div>
+			<img src="../img/LOLBanner.jpg" id="img_header" alt="imagen de cabecera">		
+		</div>
+
+		<!--Menú de navegación con sus diferentes botones -->
+		<nav>
+			<div class="div_menu">
+				<span class="boton_azul">
+					<a href="../index.html" class="div_menu">Inicio</a>
+				</span>
+
+				<span class="boton_azul">
+					<a href="./noticias.html" class="div_menu">Noticias</a>
+				</span>
+					
+				<span class="boton_azul_principal">
+					<a href="./portfolio.html" class="div_menu">Galería</a>
+				</span>
+
+				<span class="boton_azul">
+					<a href="./contacto.html" class="div_menu">Contacto</a>
+				</span>
+				
+				<span class="boton_azul">
+					<a href="./presupuesto.html" class="div_menu">Registro</a>
+				</span>
+			</div>
+		</nav>		
+	</header>
+		
+	<div>
+	<!--Div que contiene todo el contenido de la pagina principal-->
+		<div id="div_principal">
+			
+			<!--Sección 1 -->
+			<!--Ésta sección esta compuesta por un "header" que contiene el titulo y 2 galerias:
+			la primera galería dinámica (creo que le da un aspecto mucho mas visual del que se pedía en el enunciado de la prática, y
+			una segunda galeria éstatica con las mismas imagenes pero del mismo tamaó y en pequeño)-->
+			<article>
+				<header>
+					<div>
+						<h1> Aspectos de Udyr </h1>
+					</div>
+				</header>
+				
+				<div id="galeria_dinamica">
+
+					<img src="../img/Udyr_1.jpg" alt="Skin tradicional de Udyr">
+					
+					<img src="../img/Udyr_2.jpg" alt="Skin karateka de Udyr">
+				
+					<img src="../img/Udyr_3.jpg" alt="Skin primitiva de Udyr">
+
+					<img src="../img/Udyr_4.jpg" alt="Skin cuatro espiritus de Udyr">
+					
+					<img src="../img/Udyr_5.jpg" alt="Skin este no es Udyr">
+
+					<img src="../img/Udyr_6.jpg" alt="Skin dragon de Udyr">
+				</div>
+
+				<br>
+				<br>
+
+				<div id="galeria_estatica">
+
+					<img src="../img/Udyr_1.jpg" alt="Skin tradicional de Udyr">
+					
+					<img src="../img/Udyr_2.jpg" alt="Skin karateka de Udyr">
+				
+					<img src="../img/Udyr_3.jpg" alt="Skin primitiva de Udyr">
+
+					<img src="../img/Udyr_4.jpg" alt="Skin cuatro espiritus de Udyr">
+					
+					<img src="../img/Udyr_5.jpg" alt="Skin este no es Udyr">
+
+					<img src="../img/Udyr_6.jpg" alt="Skin dragon de Udyr">
+				</div>
+
+
+			</article>
+			
+			<article>
+			<!--Sección 2 -->
+			<!--Ésta segunda sección esta compuesta por un "div" que contiene: un "h1" como titulo, un "div" que tiene el contenido, 
+				y un último "div" que contiene el video (sacado de youtube) referente a dicho artículo-->
+				<div>
+				
+					<h1> Resumen del campeon </h1>
+					
+					<div>
+						<p> Udyr, el caminante espiritual más poderoso de la actualidad, comulga con todos los espíritus de Freljord, ya sea comprendiendo sus necesidades 
+							empáticamente o canalizando su energía etérea para transformarla y aplicarla a su propio y primigenio estilo de lucha. </p>
+						
+						<p> Busca el equilibrio en su interior para que su mente no se pierda entre las demás; sin embargo, también lo busca en su exterior, dado que el panorama
+							místico freljordiano solo puede prosperar con el crecimiento que acarrean los conflictos y dificultades, y Udyr sabe perfectamente que es necesario 
+							hacer sacrificios para mantener a raya el estancamiento de la paz.</p>
+					</div>
+					
+					<div>						
+						<iframe width="900" height="500" src="https://www.youtube.com/embed/l1Ehrr8IiL4" title="Tráiler de jugabilidad de Udyr | League of Legends" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</article>	
+		</div>	
+	</div>
+	
+	<footer>
+		<!--Div que contiene el pié de página.-->
+		<div  id="div_footer">
+			<!--Links de las redes sociales, ubicación de la empresa y el aviso legal-->
+			<div id="redes">
+
+				<a href="https://www.instagram.com/" title="página oficial de instagram">
+					<img class="parrafoImagenes2" src="../img/instagram.jpg" alt="Red social Instagram">
+				</a>
+				
+				<a href="https://www.facebook.com/" title="página oficial de facebook">
+					<img class="parrafoImagenes2" src="../img/facebook.jpg" alt="Red social Facebook">
+				</a>
+
+				<a href="https://www.youtube.com/" title="página oficial de youtube">
+					<img class="parrafoImagenes2" src="../img/youtube.jpg" alt="Red social Youtube">
+				</a>
+
+				<a href="https://www.twitter.com/" title="página oficial de twitter">
+					<img class="parrafoImagenes2" src="../img/twitter.jpg" alt="Red social Twitter">
+				</a>
+				<br>
+				<br>
+				<p id="pFooter"> 
+					<a href="./contacto.html">Riot Games Inc. 12333 W Olympic Blvd, Los Angeles, CA 90064, Estados Unidos </a> 
+				</p>
+				<p class="preguntaNegrita" style="text-align: center;">™ & © 2023 <a href="https://www.leagueoflegends.com/es-es/">Riot Games</a>, Inc. Todos los derechos reservados. 
+					Riot Games, League of Legends y PvP.net son marcas comerciales o marcas registradas de Riot Games, Inc. </p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

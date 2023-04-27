@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--Declaración de los caracteres, la descripción, los "robots", el autor, el lenguaje, las "arañas" y la categoria-->
+	<meta charset="UTF-8" >
+    <meta name="description" content="Proyecto final HTML-CSS" >
+    <meta name="robots" content="NOFOLLOW" >
+    <meta name="Author" content="Jose Antonio Gomez Torres" >
+    <meta name="keywords" content="proyecto_final,html,css,practica_final" >
+    <meta name="lang" content="es" >
+    <meta name="revisit-after" content="7 days" >
+    <meta name="category" content="proyecto_final" >
+	<!-- Declaración de fichero de estilos -->
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+	<!-- Declaración del favicon -->
+	<link rel="icon" type="imagen/jpeg" href="../img/LOL.jpeg">
+	<!-- Titulo de la página-->
+	<title> LEAGUE OF LEGEND - UDYR </title>
+</head>
+
+<body>
+	<!-- Contenido de la cabecera(imagen) y del menú de navegación -->
+	<header>
+		<div>
+			<img src="../img/LOLBanner.jpg" id="img_header" alt="imagen de cabecera" title="imagen de cabecera">		
+		</div>
+
+		<!--Menú de navegación con sus diferentes botones -->
+		<nav>
+			<div class="div_menu">
+				<span class="boton_azul">
+					<a href="../index.html" class="div_menu">Inicio</a>
+				</span>
+
+				<span class="boton_azul">
+					<a href="./noticias.html" class="div_menu">Noticias</a>
+				</span>
+					
+				<span class="boton_azul">
+					<a href="./portfolio.html" class="div_menu">Galería</a>
+				</span>
+
+				<span class="boton_azul">
+					<a href="./contacto.html" class="div_menu">Contacto</a>
+				</span>
+				
+				<span class="boton_azul_principal">
+					<a href="./presupuesto.html" class="div_menu">Registro</a>
+				</span>
+			</div>
+		</nav>	
+	</header>
+	
+	<div>
+	<!--Div que contiene todo el contenido de la pagina principal-->
+		<div id="div_principal">
+			<!-- Artículo 1 que contienen la imagen y el "h1"-->
+			<article>
+				<span>
+					<img id="imagen_presupuesto_1" src="../img/formulario_1.jpg" alt="Juega a League of Legends">
+				</span>
+
+				<header>
+					<div>
+						<h1>Formulario de inscripcion</h1>
+					</div>
+				</header>
+			</article>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<!-- Artículo 2 -->			
+			<!--Ésta segunda sección esta compuesta por un "header" que contiene el título del formulario y un "div" que contiene el formulario
+			y un "footer" que tiene un enlace a la descarga del juego oficial de "League of Legends"-->
+			<article>
+				<header>
+					<div id="bordes_formulario">
+						<h2> RELLENA LOS SIGUIENTES CAMPOS </h2>	
+					</div>
+				</header>
+			
+				<div id="div_formulario">
+						<form class="formulario" name="formulario" method="post" autocomplete="on">
+							<fieldset class="datos">
+								<!--Para hacer un formulario mas real y acorde con la página le agregué mas campos a rellenar-->
+								<!--He puesto que todos los campos sean obligatorios con "required"-->
+								<!--He puesto restricciones con "maxlength" limitando los caracteres máximos-->
+								<!--He puesto varias restricciones para varios campos utilizando la etiqueta "pattern"-->
+								<!--He puestro varios avisos sobre restricciones y que los campos son obligatorios mediante "tittle"-->
+								<label for="nombre" class="preguntaNegrita"> NOMBRE COMPLETO: </label><br>
+									<input type="text" name="nombre" class="form_azul" maxlength="50" size="35" id="nombre" value="" placeholder="Nombre completo" 
+									title="Este campo es obligatorio" autofocus required>
+									<br>
+									
+								<label for="nickname" class="preguntaNegrita"> NICK: </label><br>
+									<input type="text" name="nickname" class="form_azul" maxlength="20" size="25" id="nickname" value="" placeholder="Nickname"
+									title="Este campo es obligatorio" required>
+									<br>
+								
+								<label for="password" class="preguntaNegrita"> CONTRASEÑA: </label><br>
+									<input type="password" name="password" class="form_azul" maxlength="20" size="25" id="password" value="" placeholder="Contraseña" 
+									title="Al menos un número, una letra en mayúscula, una letra en minúscula y al menos 8 caracteres" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+									<br>
+																									
+								<label for="telefono" class="preguntaNegrita"> TELÉFONO: </label><br>
+									<input type="text" name="telefono" class="form_azul" maxlength="50" size="25" id="telefono" value="" placeholder="Teléfono" 
+									title="Solo debe tener números" pattern="[0-9]{2,9}" required>
+									<br>
+									
+								<label for="edad" class="preguntaNegrita"> EDAD: </label><br>
+									<input type="text" name="edad" class="form_azul" maxlength="2" size="2" id="edad" value="" placeholder="Edad" title="Solo debe tener números" 
+									pattern="[0-9]{0,2}" required>
+									<br>
+
+								<label for="email" class="preguntaNegrita"> E-MAIL: </label><br>
+									<input type="text" name="email" class="form_azul" maxlength="50" size="25" id="email" value="" placeholder="E-mail" 
+									title="Debe contener tres cadenas separadas por un @ y un punto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> 
+									<br>
+									<br>
+
+								<label for="mensaje" class="preguntaNegrita">SOLICITE MAS INFORMACIÓN:</label><br>
+									<textarea name="mensaje" class="form_azul" id="mensaje" placeholder="Describe brevemente en menos de 300 carácteres" maxlength="300"
+									title="Necesitas escribir un comentario para terminar el registro" required></textarea>
+									<br>
+								<br>
+
+								<label for="box1" id="box1_1" class="preguntaNegrita"> Acepto la política de privacidad  </label>
+									<input type="checkbox" id="box1" value="primer_checkbox" required> 
+									<p id="parrafo_formulario"> (Es obligatorio aceptar la política de privacidad y todos los campos para registrarse)</p>
+							</fieldset>
+						
+							<div>
+								<input type="submit" name="boton_enviar" value="ENVIAR" class="boton_form azul">
+								
+								<input type="reset" name="boton_borrar" value="BORRAR" class="boton_form azul">
+							</div>
+						</form>
+					</div>
+
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+					<!--Esta parte contiene el link de la descarga del juego -->
+					<footer>
+						<div id="descarga">
+							<h1> Descarga el juego </h1>
+						<br>
+						<br>
+						<br>
+								
+						<span id="descarga10">
+							<a href="https://signup.leagueoflegends.com/es-es/signup/redownload" title="página oficial de LOL para descargar el juego">
+								<img src="../img/descarga_1.jpg" alt="Descargar el juego para windows">
+							</a>
+							<br>
+							<br>
+							<br>
+						</span>
+						</div>
+					</footer>
+			</article>
+
+			
+		</div>
+	</div>
+	
+	<footer>
+		<!--Div que contiene el pié de página.-->
+		<div  id="div_footer">
+			<!--Links de las redes sociales, ubicación de la empresa y el aviso legal-->
+			<div id="redes">
+
+				<a href="https://www.instagram.com/" title="página oficial de instagram">
+					<img class="parrafoImagenes2" src="../img/instagram.jpg" alt="Red social Instagram">
+				</a>
+				
+				<a href="https://www.facebook.com/" title="página oficial de facebook">
+					<img class="parrafoImagenes2" src="../img/facebook.jpg" alt="Red social Facebook">
+				</a>
+
+				<a href="https://www.youtube.com/" title="página oficial de youtube">
+					<img class="parrafoImagenes2" src="../img/youtube.jpg" alt="Red social Youtube">
+				</a>
+
+				<a href="https://www.twitter.com/" title="página oficial de twitter">
+					<img class="parrafoImagenes2" src="../img/twitter.jpg" alt="Red social Twitter">
+				</a>
+				<br>
+				<br>
+				<p id="pFooter"> 
+					<a href="./contacto.html">Riot Games Inc. 12333 W Olympic Blvd, Los Angeles, CA 90064, Estados Unidos </a> 
+				</p>
+				<p class="preguntaNegrita" style="text-align: center;">™ & © 2023 <a href="https://www.leagueoflegends.com/es-es/">Riot Games</a>, Inc. Todos los derechos reservados. 
+					Riot Games, League of Legends y PvP.net son marcas comerciales o marcas registradas de Riot Games, Inc. </p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

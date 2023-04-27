@@ -1,0 +1,396 @@
+/* Declaración de codificación de caracteres */
+@charset "utf-8";
+
+/* Importación de Google Font "Roboto" y "Ubuntu" */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+html, body {
+	margin:0 auto;
+	padding:0px;
+	width:980px;
+	font-size:15px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* Comportamiento de los enlaces */
+a,a:visited{
+	text-decoration: none;
+}
+
+/* Comportamiento de los Títulos */
+
+h1 {
+	font-size: 35px;
+	font-family: 'Roboto', sans-serif;
+	color:#015B74;
+}
+
+h2{
+	font-size: 29px;
+	font-family: 'Roboto', sans-serif;
+	color:#015B74;
+}
+
+h3{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color:#015B74;
+}
+
+/*Párrafos de la página*/
+
+p {
+	text-align: justify;
+}
+
+.preguntaNegrita{
+	font-weight: 900;
+	color: #015B74;
+}
+
+.preguntaCursiva{
+	font-style: oblique;
+	color: #015B74;
+}
+
+/* 1. CABECERA*/
+
+	/* 1.1 Imagen de la cabecera*/
+
+#img_header{
+	width: 100%;
+	height: 100%;
+	border: 5px solid #60abf8;
+}
+
+	/* 1.2 Div del menú de las páginas (dentro de la cabecera)*/
+.div_menu{
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color:white;
+}
+
+	/* 1.3 Estilo de los botones del menú de navegación
+
+	-He tomado como referencia los botones de la práctica 4 realizada en el temario. Al diseñar la página  estuve buscando muchos estilos de botones para ispirarme y ponerlos en 
+	mi proyecto, pero vi que los de ésta practica eran perfectos por el estilo que tenian, y he hecho pequeñas modificaciones(como el tamaño, color de los bordes, tipo de letra ...),
+	para que encajen mejor en mi página.*/
+
+.boton_azul,.boton_azul:hover,.boton_azul_principal,.boton_azul_principal:hover {
+	text-shadow: 2px 1px rgba(0, 0, 0, 0.3);
+	text-align:center;
+	text-decoration: none;
+	display:inline-block;
+	width: 60px;
+	padding: 10px 40px ;
+	white-space: nowrap;
+	margin: 10px 10px 10px;
+	border: 1px solid #015B74;
+	border-radius: 2px;
+}
+	
+.boton_azul_principal {
+	background: rgb(197,222,234); 
+	background: -moz-linear-gradient(top, rgba(197,222,234,1) 0%, rgba(138,187,215,1) 31%, rgba(6,109,171,1) 100%); 
+	background: -webkit-linear-gradient(top, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); 
+	background: linear-gradient(to bottom, rgba(197,222,234,1) 0%,rgba(138,187,215,1) 31%,rgba(6,109,171,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=0 ); 
+}
+	
+.boton_azul{
+	background: #7abcff; 
+	background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); 
+	background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); 
+	background: linear-gradient(to bottom, #7abcff 0%,#60abf8 44%,#4096ee 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+}
+	
+.boton_azul:hover{
+	background: #7abcff;
+	font-size: 14px;
+	cursor: pointer;
+}
+	
+.boton_azul_principal:hover{
+	background: #7abcff;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+/* 2. DIV PRINCIPAL DE LAS PÁGINAS donde definimos la posición, márgenes, padding, comportamiento de los bordes, etc.*/
+
+#div_principal{
+	border: 5px solid #60abf8;
+	margin: 8px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+}
+
+/* 3. DIV PIE DE PÁGINA*/
+
+#div_footer {
+	border: 5px solid #60abf8;
+	font-size: 12px;
+	position:relative;
+	box-sizing:border-box;
+	clear:both;
+	color: black;
+	text-align:center;
+	padding: 30px;
+	margin: 8px;
+	
+}
+
+#redes{
+	text-align: center;
+}
+
+#pFooter{
+	text-align: center;
+}
+
+/* 4. PÁGINA INDEX*/
+
+	/* 4.1 Imagenes de la página "Inicio" */
+
+
+.imagen_index_dch {
+	clear:both;
+	position:relative;
+	float:right;
+	margin-left: 20px;
+	padding-top: 110px;
+	width: 50%;
+	height: 50%;
+}
+
+.imagen_index_dch img{
+	width:100%;
+	height:100%;
+}
+
+.imagen_index_dch_2 {
+	clear:both;
+	position:relative;
+	float:right;
+	margin-left: 20px;
+	padding-top: 75px;
+	width: 50%;
+	height: 50%;
+}
+
+.imagen_index_dch_2 img{
+	width:100%;
+	height:100%;
+}
+
+#imagen_index_abajo {
+	height: 220px;
+	width: 900px;
+	margin-top: 30px;
+	margin-left: -10px;
+	margin-right: 20px;
+}
+
+/* 5. PÁGINA NOTICIAS*/
+
+	/* 5.1 Div de la página "Noticias"*/
+
+#div_noticias_1{
+	float:left;
+	margin-left: 10px;
+	margin-right:20px;
+}
+
+	/* 5.2 celdas de la tabla noticias*/
+
+.celdas_noticias{
+	padding-left: 180px;
+}
+
+	/* 5.3 Imagenes de la página "Noticias" */
+
+#img_noticia_1{
+	width: 100%;
+	height: 100%;
+	border: 20px solid white;
+	margin-left: -10px;
+}
+
+#imagen_noticias_2 {
+	height: 220px;
+	width: 900px;
+	margin-top: -20px;
+	margin-left: -10px;
+	margin-right: 20px;
+}
+
+/*6. PÁGINA GALERÍA*/
+
+	/* 6.1 Galería dinámica */
+
+div#galeria_dinamica{
+	display: flex;
+	width: 700px;
+	height: 430px;
+	margin-left: 100px;
+}
+
+div#galeria_dinamica img{
+	width: 0px;
+	flex-grow: 1;
+	object-fit: cover;
+	opacity: .8;
+	transition: .5s ease;
+	text-align: center;
+	
+}
+
+div#galeria_dinamica img:hover{
+	cursor: crosshair;
+	width: 300px;
+	opacity: 1;
+	filter: contrast(120%);
+}
+
+	/* 6.2 Imagenes de la página "Galería" */
+
+#galeria_estatica {
+	margin-left:150px;
+}
+
+#galeria_estatica img {
+	width: 200px;
+	height: 200px;
+}
+
+/*7. PÁGINA CONTACTO*/
+
+#ubicacion{
+	margin-left: 80px;
+	font-weight: 900;
+	color: #015B74;
+}
+
+#mapa{
+	padding-left: 150px;
+}
+
+#parrafoContacto{
+	font-weight: 900;
+	text-align: center;
+	color: #015B74;
+}
+
+/*8. PÁGINA REGISTRO*/
+
+	/* 8.1 Div del formulario*/
+
+#div_formulario{
+	height:850px;
+	margin: 8px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+
+	/* 8.2 Imagenes */
+
+#imagen_presupuesto_1{
+	height: 200px;
+	width: 800px;
+	padding-left: 40px;
+	padding-right: 50px;
+}
+
+	/* 8.3 Centrado del título y boton de descarga*/
+
+#descarga{
+	margin-top: -500px;
+}
+
+#descarga10{
+	margin-left: 30%;
+	margin-bottom: 50%;
+	padding-bottom: 100px;
+}
+
+	/* 8.4 Estilos del formulario */
+
+.boton_form {
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+	text-align:center;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	display:inline-block;
+	color: #FFF;
+	background: #7abcff; 
+	padding: 6px 30px;
+	white-space: nowrap;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	margin: 10px 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.azul{
+	background: #7abcff;
+	border: 1px solid #1488FF; 
+}
+
+.azul:hover{
+ 	background: #ADD5FF;
+	cursor: pointer;
+}
+
+.form_azul{
+	margin: 0 0 5px;
+	overflow: hidden;
+	padding: 4px;
+	background-color: #e3f0fd;
+	border: 1px solid #6B6B6B;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.formulario{
+	position:absolute;
+	margin-top: 30px;
+	margin-left: 100px;
+	padding-left: 80px;
+	margin-right: 100px;
+	padding-right: 120px;
+}
+
+textarea{
+	height: 100px;
+	width: 50%;
+	margin: 8px 0;
+}
+
+#bordes_formulario{
+	margin-left: 200px;
+	color: #525252;
+}
+
+#box1_1{
+	width: 50%;	
+}
+
+#parrafo_formulario{
+	font-size: 11px;
+	font-style: italic;
+}
+
+
+
+
+

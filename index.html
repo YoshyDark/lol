@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--Declaración de los caracteres, la descripción, los "robots", el autor, el lenguaje, las "arañas" y la categoria-->
+	<meta charset="UTF-8" >
+    <meta name="description" content="Proyecto final HTML-CSS" >
+    <meta name="robots" content="NOFOLLOW" >
+    <meta name="Author" content="Jose Antonio Gomez Torres" >
+    <meta name="keywords" content="proyecto_final,html,css,practica_final" >
+    <meta name="lang" content="es" >
+    <meta name="revisit-after" content="7 days" >
+    <meta name="category" content="proyecto_final">
+	<!-- Declaración de fichero de estilos -->
+	<link rel="stylesheet" type="text/css" href="./estilos/estilos.css">
+	<!-- Declaración del favicon -->
+	<link rel="icon" type="imagen/jpeg" href="./img/LOL.jpeg">
+	<!-- Titulo de la página-->
+	<title> LEAGUE OF LEGEND - UDYR </title>
+</head>
+
+<body>
+	<!-- Contenido de la cabecera(imagen) y del menú de navegación -->
+	<header>
+		<div>
+			<img src="./img/LOLBanner.jpg" id="img_header" alt="imagen de cabecera" title="imagen de cabecera">		
+		</div>
+
+		<!--Menú de navegación con sus diferentes botones cada boton del menú  -->
+		<!--Cada boton del menú  en el cual se está se diferencia con la clase "boton_azul_principal" -->
+		<nav>
+			<div class="div_menu">
+				<span class="boton_azul_principal">
+					<a href="#" class="div_menu">Inicio</a>
+				</span>
+
+				<span class="boton_azul">
+					<a href="./views/noticias.html" class="div_menu">Noticias</a>
+				</span>
+
+				<span class="boton_azul">
+					<a href="./views/portfolio.html" class="div_menu">Galería</a>
+				</span>
+
+				<span class="boton_azul">
+					<a href="./views/contacto.html" class="div_menu">Contacto</a>
+				</span>
+				
+				<span class="boton_azul">
+					<a href="./views/presupuesto.html" class="div_menu">Registro</a>
+				</span>
+			</div>
+		</nav>	
+	</header>
+	
+	<!--Div que abarca el contenido principal de la página-->
+	<div>
+		<div id="div_principal">
+			<!--Contenido de la sección 1 usando "article"-->
+			<!--El artículo esta dividido en: un "header" que tiene el título, un "span" que tiene la imagen, y un "div" que tiene el contenido-->
+			<article>
+				<header>
+					<div>
+						<h1>Bienvenidos a la Grieta del Invocador </h1>
+					</div>
+				</header>
+				
+				<br>
+				<br>
+				<span class="imagen_index_dch">
+					<img src="./img/grieta_del_invocador.jpg" class="tres" alt="Grieta del Invocador 1">
+				</span>
+				
+				<div>
+					<h2>Destruye la base </h2>
+
+						<br>
+						<p class="preguntaNegrita"> Tu nexo </p>
+						<p>Los súbditos se generan en tu nexo. Detrás del nexo se encuentra la fuente, donde podrás recuperar vida y maná con rapidez y acceder a la tienda. </p>
+						
+						<p class="preguntaNegrita"> El nexo enemigo </p>
+						<p>El nexo enemigo, que se encuentra en la base del equipo contrario, es igual que el de tu equipo. Si acabas con él, ganarás la partida. </p>
+					
+					<h2>Ábrete paso </h2>
+						<p>Para llegar hasta el nexo enemigo, tu equipo tendrá que avanzar por al menos una calle. Hay estructuras defensivas que bloquean tu avance: las torretas y 
+							los inhibidores. Cada calle cuenta con tres torretas y un inhibidor. Además, cada nexo tiene dos torretas adicionales.</p>
+						<p class="preguntaNegrita"> Torretas</p>
+						<p> Las torretas infligen daño a los súbditos y campeones enemigos, y ofrecen a su equipo un campo de visión limitado a través de la niebla de guerra. 
+							    Ataca a estas estructuras con un grupo de súbditos delante, para que no te ataquen a ti, y sigue avanzando.</p>
+						
+						<p class="preguntaNegrita">Inhibidores</p>
+						<p> Todos los inhibidores están protegidos por una torreta. Destruirlos hará que aparezcan supersúbditos de tu equipo en esa calle durante varios minutos. 
+								Después de un tiempo, el inhibidor volverá a aparecer y se dejarán de generar supersúbditos.</p>
+						</div>
+			</article>
+
+			<br>
+			<br>
+			<br>
+
+			<!--Contenido del sección 2 usando "article"-->
+			<!--Éste artículo esta dividido en: un span que tiene la imagen, y un div que tiene el contenido-->
+			<article>
+				<span class="imagen_index_dch_2">
+					<img src="./img/grieta_del_invocador_2.jpg" class="tres" alt="Grieta del Invocador 2">
+				</span>
+
+				<div>
+
+					<h2>A la conquista de la jungla</h2>
+
+						<br>
+						<p>Entre las calles se encuentra la jungla, en la que habitan monstruos neutrales y plantas mágicas. Los dos tipos de monstruos más importantes son el 
+							Barón Nashor y los dragones. Acabar con estas unidades otorgará a tu equipo mejoras únicas y, en ocasiones, te ayudará a darle la vuelta a la partida.</p>
+						
+						<p class="preguntaNegrita">Barón Nashor</p>
+						<p>El Barón Nashor es el monstruo más poderoso de toda la jungla. Asesinar al Barón otorga a tu equipo daño de ataque y poder de habilidad adicionales, 
+								una versión mejorada de Retirada y potencia significativamente a los súbditos que se encuentren cerca de un campeón con la mejora activa.</p>
+						
+						<p class="preguntaNegrita">Dragones</p>
+						<p>Los dragones son monstruos muy poderosos que otorgan mejoras únicas en función del elemento al que pertenezcan. Hay cinco dragones elementales y un 
+								Dragón anciano.</p>
+					
+					<h2>Elije una calle</h2>
+						<p>La composición de equipo más recomendada está integrada por cinco posiciones diferentes. Las características de cada una de las calles favorecen a ciertos 
+							tipos de campeones y roles. 
+							<br>¡Pruébalas todas o elige la que más te guste!</p>
+						
+						<p class="preguntaNegrita">Las calles a elegir son:</p>
+						<ul>
+							<li>Calle Superior (TOP)</li>
+							<li>Jungla</li>
+							<li>Calle Central (MID)</li>
+							<li>Calle Inferior (ADC)</li>
+							<li>Suport</li>
+						</ul>
+				</div>
+			</article>
+
+			<br>
+			<br>
+			
+			<!--Contenido del sección 3 usando "article"-->
+			<!--Éste ultimo artículo esta compuesto por un "div" que contiene: un "h1" con el título, un "div" que tiene el contenido, y por último un "span" con una imagen-->
+			<article>
+				<div>
+					<h1>Mejora tu campeón </h1>
+						<p> A medida que avanza la partida, los campeones se vuelven más fuertes al conseguir experiencia para subir de nivel y oro para comprar objetos más 
+						poderosos. Estos dos factores son esenciales para superar al equipo enemigo y destruir su base.</p>
+					
+					<div>
+						<p class="preguntaNegrita">Consigue experiencia </p>
+						<p>Cuando los campeones consiguen una cantidad determinada de experiencia, suben de nivel, lo que les permite desbloquear o mejorar sus habilidades y 
+							aumenta sus estadísticas básicas. Asesina a unidades y campeones enemigos, asiste a tus compañeros en asesinatos y destruye estructuras defensivas 
+							para conseguir experiencia.</p>
+						
+						<p class="preguntaNegrita">Consigue oro</p>
+						<p>El oro es la divisa del juego, que te permite comprar objetos para tu campeón. Asesina a unidades y campeones enemigos, asiste a tus compañeros en 
+							asesinatos, destruye estructuras defensivas y hazte con objetos que lo generen para conseguir oro.</p>
+							
+						<p class="preguntaNegrita">Tienda</p>
+						<p> En la tienda puedes comprar y vender objetos con el oro que hayas conseguido. Solo se puede acceder a ella desde la fuente.</p>
+					</div>
+					
+					<span>
+						<img id="imagen_index_abajo" src="./img/grieta_del_invocador_3.jpg" alt="Grieta del Invocador 3">
+					</span>
+				</div>
+			</article>
+		</div>
+	</div>
+	
+	<footer>
+		<!--Div que contiene el pié de página.-->
+		<div  id="div_footer">
+			<!--Links de las redes sociales, ubicación de la empresa y el aviso legal-->
+			<div id="redes">
+				<!--Los links de las redes sociales están compuestas por sus diferentes iconos-->
+				<a href="https://www.instagram.com/" title="página oficial de instagram">
+					<img class="parrafoImagenes2" src="./img/instagram.jpg" alt="Red social Instagram">
+				</a>
+				
+				<a href="https://www.facebook.com/" title="página oficial de facebook">
+					<img class="parrafoImagenes2" src="./img/facebook.jpg" alt="Red social Facebook">
+				</a>
+
+				<a href="https://www.youtube.com/" title="página oficial de youtube">
+					<img class="parrafoImagenes2" src="./img/youtube.jpg" alt="Red social Youtube">
+				</a>
+
+				<a href="https://www.twitter.com/" title="página oficial de twitter">
+					<img class="parrafoImagenes2" src="./img/twitter.jpg" alt="Red social Twitter" >
+				</a>
+
+				<br>
+				<br>
+				<!--Este parrafo contiene la dirección de la sucursal de la empresa , y un enlace que nos redirige a nuestra página "contacto" para que pueda
+					ver toda la información mucho mejor-->
+				<p id="pFooter"> 
+					<a href="./views/contacto.html">Riot Games Inc. 12333 W Olympic Blvd, Los Angeles, CA 90064, Estados Unidos </a> 
+				</p>
+				<!--Éste parrafo tiene la información del aviso legal y un enlace a la página oficial de "League of Legends"-->
+				<p class="preguntaNegrita" style="text-align: center;">™ & © 2023 <a href="https://www.leagueoflegends.com/es-es/">Riot Games</a>, Inc. Todos los derechos reservados. 
+					Riot Games, League of Legends y PvP.net son marcas comerciales o marcas registradas de Riot Games, Inc. </p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
